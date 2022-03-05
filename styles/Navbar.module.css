@@ -1,0 +1,113 @@
+/*TOP BAR */
+.Navbar {
+  /*   position: fixed; */
+    width: 100%;    
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(255, 255, 255, 0.829);
+    z-index: 9999;
+}
+@media (max-width:789px) {
+    
+    .NavbarDetail02 {
+      display:none !important;
+    }
+ 
+  }
+.NavbarDetail01 {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100px;
+}
+.NavbarDetail02 {
+    width: 100%;
+    height: auto;
+    background-color: rgb(179,140,74);
+}
+
+.NavbarLogo {
+    width: 20%;
+    height: 100px;
+    display: flex;
+}
+.NavbarLogoStyle {
+    margin: auto;
+ 
+}
+.NavbarList {
+   max-width: 1200px;
+   margin: 0 auto;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.MenuItemBar {
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    flex-wrap:wrap;
+    max-width:100%;
+    height: 45px;
+    justify-content: space-around;
+}
+.MenuItemBar > li {
+    display: flex;
+    
+}
+.MenuItemBar > li > a{
+    margin: auto;
+    color: var(--text-color);
+    font-weight: bold;
+    padding: 0 1rem;
+    
+}
+.MenuItem {
+    list-style-type: none;
+    margin: auto;
+}
+.NavbarContact {
+    width: 30%;
+    height: auto;
+    
+}
+.MenuItemContact {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    justify-content: flex-end;
+}
+.MenuItemContact >li {
+    display: flex;
+     padding: 0 0.8rem;
+
+}
+.StyleIconContactMenu {
+    font-size: 1.2rem;
+    margin: auto;
+    color: aliceblue;
+}
+.IconHome {
+    width:fit-content;
+    height:100%;
+  
+    display:flex;
+    
+    position:relative;
+    padding:0;
+}
+.IconHomeStyle {
+    font-size: 1.2rem;
+    position:absolute;
+    top:50%;
+
+    transform: translateY(-50%);
+    color: #ffff;
+
+}
+
