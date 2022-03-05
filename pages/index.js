@@ -75,42 +75,46 @@ export default function Home() {
         <div className={styles.Banner}>
           <div className={styles.BannerImg}>
             <Image src="/banner.jpg" layout='fill' objectFit="cover" className={styles.Image} alt='imagenpm run bvuild' />
+            
           </div>
-          <div className={styles.BannerContent}>
+          <div className={styles.container}>
             <div className={styles.ItemBannerContentList}>
-              <div className={styles.ItemContent}>
-                <div className={styles.middle}>
-                  <RiHeart2Fill className={styles.StyleIconContent} />
-                  <h3>TRUST</h3>
-                  <p>Id quis ullamco est officia ex duis duis aliqua.</p>
+                <div className={styles.BoxShadown}>
+                  <div className={styles.ItemContent}>
+                    <div className={styles.middle}>
+                      <RiHeart2Fill className={styles.StyleIconContent} />
+                      <h3>TRUST</h3>
+                      <p>Id quis ullamco est officia ex duis duis aliqua.</p>
+                    </div>
+                  </div>
+                  <div className={styles.ItemContent}>
+                    <div className={styles.middle}>
+                      <GoLaw className={styles.StyleIconContent} />
+                      <h3>LOYALTY</h3>
+                      <p>Id quis ullamco est officia  alit alialiqua.</p>
+                    </div>
+                  </div>
+                  <div className={styles.ItemContent}>
+                    <div className={styles.middle}>
+                      <RiHeart2Fill className={styles.StyleIconContent} />
+                      <h3>SUCPPORT</h3>
+                      <p>Id quis ullamco est officia ex duis duis alis aliqua.</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div className={styles.ItemContent}>
-                <div className={styles.middle}>
-                  <GoLaw className={styles.StyleIconContent} />
-                  <h3>LOYALTY</h3>
-                  <p>Id quis ullamco est officia ex duis duis t officia ex duis duis alit officia ex duis duis alialiqua.</p>
-                </div>
-              </div>
-              <div className={styles.ItemContent}>
-                <div className={styles.middle}>
-                  <RiHeart2Fill className={styles.StyleIconContent} />
-                  <h3>SUCPPORT</h3>
-                  <p>Id quis ullamco est officia ex duis duit officia ex duis duis alis aliqua.</p>
-                </div>
-              </div>
             </div>
             <div className={styles.WelcomeContentBanner}>
-              <div className={styles.ImageWelcome}>
-              </div>
               <div className={styles.ContentWelcome}>
                 <div className={styles.middle}>
                   <h3>“EVERY MOUNTAIN TOP IS WITHIN REACH IF YOU JUST KEEP CLIMBING.”</h3>
                   <p>Sint id laborum ipscitation consectetur nulla voluptate labore elit amet enim commodo irure Lorem. Aliquip est ut sit laboris adipisicing. Ad amet quis cupidatat nulla ad anim ullamco aliqua dolor velit magna fugiat et. Ea velit officia exercitation dolore consequat labore sit incididunt ea proident excepteur excepteur sit dolor. Laboris duis consequat exercitation cillum.</p>
                 </div>
               </div>
-            </div>
+              <div className={styles.ImageWelcome}>
+              </div>
+            </div>  
           </div>
+          
         </div>
         <div className={styles.ListServices}>
           <h2 className={styles.HeadingLanding}>OUR SERVICES</h2>
@@ -120,14 +124,35 @@ export default function Home() {
                 <div className={styles.ServicesItemTitleImage}>
                 </div>
                 <div className={styles.ServicesItemTitleContent}>
-                  <p><span className={styles.FirstCharacter}>P</span>ariatur nisi qui duis adipisicing cul nostrud eu pariatur minim. Veniam sunt ad ipsum consectetur duis ut dolore.</p>
+                  <h2>FOREIGN INVESTMENT</h2>
+                  <p style={{textAlign:'justify'}}>Proudly announces itself as one of Firm’s investment-related services include: Read more</p>
                 </div>
               </div>
               <ul className={styles.ServicesItemDetail}>
-                <li><FaArrowAltCircleRight /><a href='/demo'>CURD</a></li>
-                <li><FaArrowAltCircleRight /><a href='/demo'>CURD</a></li>
-                <li><FaArrowAltCircleRight /><a href='/demo'>CURD</a></li>
-                <li><FaArrowAltCircleRight /><a href='/demo'>CURD</a></li>
+                <li><FaArrowAltCircleRight /><a href='/demo'>Establish 100% FDI enterprise in Vietnam</a></li>
+                <li><FaArrowAltCircleRight /><a href='/demo'>Establish foreign branch in Vietnam</a></li>
+                <li><FaArrowAltCircleRight /><a href='/demo'>Establish foreign enterprise in Vietnam</a></li>
+                <li><FaArrowAltCircleRight /><a href='/demo'>Establish representative office in Vietnam</a></li>
+                <li><FaArrowAltCircleRight /><a href='/demo'>Capital contribution in Vietnam</a></li>
+                <li><FaArrowAltCircleRight /><a href='/demo'>Adjust the investment registration certificate in Vietnam</a></li>
+              </ul>
+            </div>
+            <div className={styles.ServicesItem}>
+              <div className={styles.ServicesItemTitle}>
+                <div className={styles.ServicesItemTitleImage}>
+                </div>
+                <div className={styles.ServicesItemTitleContent}>
+                  <h2>INTELLECTUAL PROPERTY</h2>
+                  <p style={{textAlign:'justify'}}>To be trusted by clients for norty right for overseas enterprises and so on.  Read more</p>
+                </div>
+              </div>
+              <ul className={styles.ServicesItemDetail}>
+                <li><FaArrowAltCircleRight /><a href='/demo'>Trademark Registration in Vietnam</a></li>
+                <li><FaArrowAltCircleRight /><a href='/demo'>Industrial design registration in Vietnam</a></li>
+                <li><FaArrowAltCircleRight /><a href='/demo'>Patents registration in Vietnam</a></li>
+                <li><FaArrowAltCircleRight /><a href='/demo'>Trademark infringements in Vietnam</a></li>
+                <li><FaArrowAltCircleRight /><a href='/demo'>Commercial franchise</a></li>
+                <li><FaArrowAltCircleRight /><a href='/demo'>Copyright registration in Vietnam</a></li>
               </ul>
             </div>
             <div className={styles.ServicesItem}>
@@ -136,14 +161,18 @@ export default function Home() {
 
                 </div>
                 <div className={styles.ServicesItemTitleContent}>
-                  <p><span className={styles.FirstCharacter}>P</span>ariatur nisi qui duis adipisicing cul nostrud eu pariatur minim. Veniam sunt ad ipsum consectetur duis ut dolore.</p>
+                  <h2>CORPORATE LAW</h2>
+                  <p style={{textAlign:'justify'}}>To help foreigners coming to n overseas investor in Vietnam, consultancy on buying Vietnam-based house for foreigners, consultancy on tax issues for foreigners with income…» Read more</p>
                 </div>
               </div>
               <ul className={styles.ServicesItemDetail}>
-                <li><FaArrowAltCircleRight /><a href='/demo'>CURD</a></li>
-                <li><FaArrowAltCircleRight /><a href='/demo'>CURD</a></li>
-                <li><FaArrowAltCircleRight /><a href='/demo'>CURD</a></li>
-                <li><FaArrowAltCircleRight /><a href='/demo'>CURD</a></li>
+                <li><FaArrowAltCircleRight /><a href='/demo'>Vietnam work permits</a></li>
+                <li><FaArrowAltCircleRight /><a href='/demo'>Temporary Residence Card in Vietnam</a></li>
+                <li><FaArrowAltCircleRight /><a href='/demo'>Contract consultancy in Vietnam</a></li>
+                <li><FaArrowAltCircleRight /><a href='/demo'>Regular legal consultancy in Vietnam</a></li>
+                <li><FaArrowAltCircleRight /><a href='/demo'>Enterprise internal dispute settlement</a></li>
+                <li><FaArrowAltCircleRight /><a href='/demo'>M&A service in Vietnam</a></li>
+              
               </ul>
             </div>
             <div className={styles.ServicesItem}>
@@ -152,30 +181,17 @@ export default function Home() {
 
                 </div>
                 <div className={styles.ServicesItemTitleContent}>
-                  <p><span className={styles.FirstCharacter}>P</span>ariatur nisi qui duis adipisicing cul nostrud eu pariatur minim. Veniam sunt ad ipsum consectetur duis ut dolore.</p>
+                  <h2>TAX & ACCOUNTING</h2>
+                  <p>To help our clients with tax procedures, Viet An Law Firm » Read more</p>
                 </div>
               </div>
               <ul className={styles.ServicesItemDetail}>
-                <li><FaArrowAltCircleRight /><a href='/demo'>CURD</a></li>
-                <li><FaArrowAltCircleRight /><a href='/demo'>CURD</a></li>
-                <li><FaArrowAltCircleRight /><a href='/demo'>CURD</a></li>
-                <li><FaArrowAltCircleRight /><a href='/demo'>CURD</a></li>
-              </ul>
-            </div>
-            <div className={styles.ServicesItem}>
-              <div className={styles.ServicesItemTitle}>
-                <div className={styles.ServicesItemTitleImage}>
-
-                </div>
-                <div className={styles.ServicesItemTitleContent}>
-                  <p><span className={styles.FirstCharacter}>P</span>ariatur nisi qui duis adipisicing cul nostrud eu pariatur minim. Veniam sunt ad ipsum  minim. Veniam sunt ad ipsum consectetur  minim. Veniam sunt ad ipsum consectetur  minim. Veniam sunt ad ipsum consectetur consectetur duis ut dolore.</p>
-                </div>
-              </div>
-              <ul className={styles.ServicesItemDetail}>
-                <li><FaArrowAltCircleRight /><a href='/demo'>CURD</a></li>
-                <li><FaArrowAltCircleRight /><a href='/demo'>CURD</a></li>
-                <li><FaArrowAltCircleRight /><a href='/demo'>CURD</a></li>
-                <li><FaArrowAltCircleRight /><a href='/demo'>CURD</a></li>
+                <li><FaArrowAltCircleRight /><a href='/demo'>Personal income tax audit services in Vietnam</a></li>
+                <li><FaArrowAltCircleRight /><a href='/demo'>Social insurance services in Vietnam</a></li>
+                <li><FaArrowAltCircleRight /><a href='/demo'>Tax accounting consulting services</a></li>
+                <li><FaArrowAltCircleRight /><a href='/demo'>Tax consultancy for foreign enterprises in Vietnam</a></li>
+                <li><FaArrowAltCircleRight /><a href='/demo'>Value-added tax consulting services in Vietnam</a></li>
+                <li><FaArrowAltCircleRight /><a href='/demo'>Tax services for foreign representative offices in Vietnam</a></li>
               </ul>
             </div>
           </div>

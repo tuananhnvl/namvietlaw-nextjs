@@ -8,6 +8,7 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: rgba(255, 255, 255, 0.829);
     z-index: 9999;
+   
 }
 @media (max-width:789px) {
     
@@ -19,7 +20,9 @@
 .NavbarDetail01 {
     max-width: 1200px;
     margin: 0 auto;
-    height: 100px;
+    height: 12vh;
+    display:flex;
+    justify-content:space-between;
 }
 .NavbarDetail02 {
     width: 100%;
@@ -29,7 +32,7 @@
 
 .NavbarLogo {
     width: 20%;
-    height: 100px;
+    height: inherit;
     display: flex;
 }
 .NavbarLogoStyle {
@@ -72,7 +75,8 @@
 .NavbarContact {
     width: 30%;
     height: auto;
-    
+    display:flex;
+    justify-content: flex-end;
 }
 .MenuItemContact {
     list-style-type: none;
@@ -80,7 +84,6 @@
     margin: 0;
     padding: 0;
     height: 100%;
-    justify-content: flex-end;
 }
 .MenuItemContact >li {
     display: flex;
@@ -111,3 +114,27 @@
 
 }
 
+
+
+.IconNav01 {
+    background-color:blue;
+   width:50px;
+   height:50px;
+   margin:auto;
+   display:flex;
+   border-radius:50%;
+   
+}
+.TitIconNav01 {
+    height:50px;
+    margin:auto;
+    padding-right:10px;
+
+}
+.TitIconNav01 > h3{
+    margin:0;
+}
+.TitIconNav01 >p {
+    margin:5px 0 0 0;
+    
+}

@@ -38,6 +38,16 @@ export default function NavBar() {
                     <div className={styles.NavbarLogo}>
                         <Link href="/" className={styles.NavbarLogoStyle}><Image src="/logo.svg" alt="Vercel Logo"  width={350} height={90}  /></Link>
                     </div>
+                    <div className={styles.NavbarContact}>
+                        <a  className={styles.IconNav01}><FaFacebookF size={30} color={`#ffff`} style={{margin:'auto'}} /></a>
+                        <a className={styles.TitIconNav01}>
+                            <h3 >Hotline :</h3>
+                            <p>
+                                Contact to Services : +12345789
+                            </p>
+                        </a>
+                     
+                    </div>
                 </div>
             </nav>
             <div  className={`${stickyClass}`}>
